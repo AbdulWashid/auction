@@ -297,14 +297,14 @@
                     <div class="or">
                         <span>Or</span>
                     </div>
-                    <form class="login-form" >
+                    <form class="login-form" method="post" action="{{route()}}">
                         <div class="form-group mb-30">
                             <label for="login-email"><i class="far fa-envelope"></i></label>
-                            <input type="text" id="login-email" placeholder="Email Address">
+                            <input type="email" name="email" id="login-email" placeholder="Email Address" required>
                         </div>
                         <div class="form-group">
                             <label for="login-pass"><i class="fas fa-lock"></i></label>
-                            <input type="password" id="login-pass" placeholder="Password">
+                            <input name="password" type="password" minlength="6" id="login-pass" placeholder="Password" required>
                             <span class="pass-type"><i class="fas fa-eye"></i></span>
                         </div>
                         <div class="form-group mt-3 mb-3">
